@@ -11,6 +11,11 @@ root@88544e0a5cb3:/var/www/html$ php artisan migrate:fresh --seed
 ```APP_KEY``` is included in ```.env.example``` file. But it should be regenerated for security measure.
 
 ```php artisan key:generate``` can be used for regenerate the commmand.
+
+# Running test from containaer
+```bash
+./vendor/bin/phpunit
+```
 # GUI of the application
 <div style="text-align: center;">
 
@@ -80,3 +85,4 @@ http://localhost:8080/public/login
 * Test case expect it database seed was done
 * Filtering/searching it not covered in test
 * UI/UX could better make better
+* Fogot to use tear down :D
